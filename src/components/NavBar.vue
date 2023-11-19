@@ -4,22 +4,23 @@
   
         <b-navbar class="navbar-custom">
           <b-container>
-            <!-- Logotipo da Pizzaria -->
+
             <b-navbar-brand href="#">
-              <img src="@/img/logo.png" alt="Logotipo da Pizzaria" class="logo">
-              <span class="">Power Pizza</span>
+              <img src="@/img/logo1.png" alt="Logotipo da Pizzaria" class="logo">
             </b-navbar-brand>
   
-            <!-- Links de Navegação -->
+
             <b-navbar-nav class="ml-auto">
               <b-nav-item>
-                <b-button variant="success" href="#about">Sobre Nós</b-button>
+                <b-button variant="light" href="#menu">CARDÁPIO</b-button>
               </b-nav-item>
+              
               <b-nav-item>
-                <b-button variant="success" href="#menu">Nosso Menu</b-button>
+                <b-button variant="light" href="#about">PROMOÇÕES</b-button>
               </b-nav-item>
+             
               <b-nav-item>
-                <b-button variant="success" href="#contact">Contato</b-button>
+                <b-button variant="light" href="#contact">CONTATO</b-button>
               </b-nav-item>
             </b-navbar-nav>
           </b-container>
@@ -36,16 +37,13 @@
   </script>
   
   <style scoped>
-  /* Estilos específicos do componente */
   
   .navbar-custom {
-    background-color: #ff0000df
-      /* Cor de fundo da navbar */
+    background-color: #1d4e28
   }
   
   .logo {
     max-height: 40px;
-    /* Altura máxima do logotipo */
   }
   
   </style>

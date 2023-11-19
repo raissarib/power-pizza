@@ -1,51 +1,47 @@
 <template>
-    <div>
-  
-      <!--<b-carousel id="carousel" fade controls indicators>-->
-      <!--<b-carousel-slide caption="Pizza Deliciosa" :img-src="require('@/img/img1.png')"></b-carousel-slide>-->
-      <!--<b-carousel-slide caption="Ambiente Aconchegante" :img-src="require('@/img/logo.png')"></b-carousel-slide>-->
-      <!--</b-carousel>-->
-  
-      <div class="home">
-        <!-- Conteúdo adicional na seção com imagem de fundo -->
-        <h1 class="title">Power Pizza</h1>
-        <p>DESCUBRA NOSSOS SABORES DELICIOSOS</p>
-        <b-button variant="success">Fazer Pedido</b-button>
-      </div>
-  
-    </div>  
+  <div>
 
-  </template>
-  
-  <script>
-  export default {
-    name: 'HomeSection',
-  }
-  </script>
-  
-  <style scoped>
-  
-  .home {
-    background-image: url('@/img/img1.png');
-    /* Substitua pelo caminho real da sua imagem */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #ffffff;
-    /* Cor do texto na seção, ajuste conforme necessário */
-    font-size: 20px;
-    text-align: center;
-    padding: 225px 0;
-    /* Ajuste o espaçamento interno conforme necessário */
-  }
-  
-  .title {
-    color: #ff0000df;
-    font-size: 105px;
-    font-family: 'Agbalumo';
-    text-shadow:
-      1px 1px 0 #000;
-  }
+    <div class="home">
+      <h1 class="title">Power Pizza</h1>
+      <p class="sub-title">descubra nosso sabores deliciosos</p>
+      <b-button variant="success">Fazer Pedido</b-button>
+    </div>
 
-  </style>
+
+  </div>
+</template>
+  
+<script>
+export default {
+  name: 'HomeSection',
+}
+</script>
+  
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+.home {
+  background-image: url('@/img/img1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 225px 0;
+}
+
+.title {
+  font-family: 'Agbalumo', sans-serif;
+  color: #ff0000df;
+  font-size: 105px;
+  text-shadow:
+    1px 1px 0 #000;
+}
+
+.sub-title {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+}
+</style>
   
