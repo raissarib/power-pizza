@@ -21,7 +21,6 @@ export default {
 <style scoped>
 
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
 .home {
   background-image: url('@/img/img1.png');
@@ -41,7 +40,6 @@ export default {
 }
 
 .sub-title {
-  font-family: 'Roboto Condensed', sans-serif;
   color: #ffffff;
   font-size: 20px;
 }
@@ -56,5 +54,6 @@ export default {
   background-color: #ff0000df;
   border-color: #ff0000df;
 }
+
 </style>
   

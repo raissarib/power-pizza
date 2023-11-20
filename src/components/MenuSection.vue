@@ -11,7 +11,7 @@
     <div id="app">
       <b-container fluid>
         <b-row class="center">
-          <!-- Primeiro Card -->
+
           <b-col md="6" class="mb-4">
             <b-card no-body class="overflow-hidden" style="max-width: 540px;">
               <b-row no-gutters>
@@ -23,14 +23,14 @@
                     <b-card-text>
                       Queijo, calabresa, cebola e oregano.
                     </b-card-text>
-                    <b-button class="btn-custom" v-b-popover.hover="'O agressor está repetindo seus atos'">R$ 27,90 </b-button>
+                    <b-button class="btn-custom" v-b-popover.hover="'O agressor está repetindo seus atos'">R$ 27,90
+                    </b-button>
                   </b-card-body>
                 </b-col>
               </b-row>
             </b-card>
           </b-col>
 
-          <!-- Segundo Card -->
           <b-col md="6" class="mb-4">
             <b-card no-body class="overflow-hidden" style="max-width: 540px;">
               <b-row no-gutters>
@@ -42,7 +42,8 @@
                     <b-card-text>
                       Queijo, tomate, oregano e manjericão.
                     </b-card-text>
-                    <b-button class="btn-custom" v-b-popover.hover="'Estou sendo isolada pelo agressor'">R$ 28,90 </b-button>
+                    <b-button class="btn-custom" v-b-popover.hover="'Estou sendo isolada pelo agressor'">R$ 28,90
+                    </b-button>
                   </b-card-body>
                 </b-col>
               </b-row>
@@ -114,7 +115,8 @@
                     <b-card-text>
                       Banana e canela.
                     </b-card-text>
-                    <b-button class="btn-custom" v-b-popover.hover="'Estou sendo perseguida/stalkeada'">R$ 29,90</b-button>
+                    <b-button class="btn-custom" v-b-popover.hover="'Estou sendo perseguida/stalkeada'">R$
+                      29,90</b-button>
                   </b-card-body>
                 </b-col>
               </b-row>
@@ -124,14 +126,6 @@
 
         </b-row>
       </b-container>
-    </div>
-
-    <div class="carousel-pizza">
-      <b-carousel id="carousel" img-width="1024" img-height="480" :interval="10000">
-        <b-carousel-slide :img-src="require('@/img/anuncio1.png')"></b-carousel-slide>
-        <b-carousel-slide :img-src="require('@/img/anuncio2.png')"></b-carousel-slide>
-        <b-carousel-slide :img-src="require('@/img/anuncio3.png')"></b-carousel-slide>
-      </b-carousel>
     </div>
 
   </div>

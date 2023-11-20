@@ -23,7 +23,7 @@
           </b-nav-item>
 
           <b-nav-item class="navbar-item">
-            CONTATO
+            FALE CONOSCO
           </b-nav-item>
 
         </b-navbar-nav>
@@ -34,14 +34,16 @@
 </template>
   
 <script>
+
 export default {
   name: 'NavBar',
 }
+
 </script>
   
 <style scoped>
+
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
 .navbar-custom {
   background-color: #1d4e28
@@ -56,9 +58,7 @@ export default {
 }
 
 .navbar-item {
-  font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
 }
-
 </style>
   

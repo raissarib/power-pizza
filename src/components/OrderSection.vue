@@ -1,50 +1,60 @@
 <template>
-  <div class="order">
+  <div>
+    <div class="order">
 
-    <div class="order-section">
-      <h2>FAÇA SEU PEDIDO</h2>
+      <div class="order-section">
+        <h2>FAÇA SEU PEDIDO</h2>
 
-      <form>
-        <label for="nome">Nome:</label>
-        <b-form-input id="nome" v-model="text" placeholder="Digite seu nome..." required></b-form-input>
+        <form>
+          <label for="nome">Nome:</label>
+          <b-form-input id="nome" v-model="text" placeholder="Digite seu nome..." required></b-form-input>
 
-        <label for="endereco">Endereço:</label>
-        <b-form-input id="endereco" v-model="text" placeholder="Digite seu endereço..." required></b-form-input>
+          <label for="endereco">Endereço:</label>
+          <b-form-input id="endereco" v-model="text" placeholder="Digite seu endereço..." required></b-form-input>
 
-        <div class="form-group">
-          <label for="cep">CEP:</label>
-          <div class="input-group">
-            <TheMask class="form-control" id="cep" v-model="text" mask="#####-###" placeholder="Digite seu CEP..."
-              required />
+          <div class="form-group">
+            <label for="cep">CEP:</label>
+            <div class="input-group">
+              <TheMask class="form-control" id="cep" v-model="text" mask="#####-###" placeholder="Digite seu CEP..."
+                required />
+            </div>
           </div>
-        </div>
 
-        <div class="form-group">
-          <label for="telefone">Número de Telefone:</label>
-          <div class="input-group">
-            <TheMask class="form-control" id="telefone" v-model="text" mask="(##)#####-####"
-              placeholder="Digite seu telefone com DDD..." required />
+          <div class="form-group">
+            <label for="telefone">Número de Telefone:</label>
+            <div class="input-group">
+              <TheMask class="form-control" id="telefone" v-model="text" mask="(##)#####-####"
+                placeholder="Digite seu telefone com DDD..." required />
+            </div>
           </div>
-        </div>
 
-        <label for="sabor">Sabor da Pizza:</label>
-        <b-form-select class="custom-select" id="sabor" placeholder="Selecione um sabor" required>
-          <b-form-select-option value="calabresa">Calabresa</b-form-select-option>
-          <b-form-select-option value="margherita">Margherita</b-form-select-option>
-          <b-form-select-option value="modadacasa">Moda da casa</b-form-select-option>
-          <b-form-select-option value="pepperoni">4 Queijos</b-form-select-option>
-          <b-form-select-option value="chocolate">Chocolate</b-form-select-option>
-          <b-form-select-option value="banana">Banana</b-form-select-option>
-        </b-form-select>
+          <label for="sabor">Sabor da Pizza:</label>
+          <b-form-select class="custom-select" id="sabor" placeholder="Selecione um sabor" required>
+            <b-form-select-option value="calabresa">Calabresa</b-form-select-option>
+            <b-form-select-option value="margherita">Margherita</b-form-select-option>
+            <b-form-select-option value="modadacasa">Moda da casa</b-form-select-option>
+            <b-form-select-option value="pepperoni">4 Queijos</b-form-select-option>
+            <b-form-select-option value="chocolate">Chocolate</b-form-select-option>
+            <b-form-select-option value="banana">Banana</b-form-select-option>
+          </b-form-select>
 
-        <label for="observacoes">Observações:</label>
-        <b-form-textarea id="textarea" v-model="text" placeholder="Tem alguma observação..." rows="3"
-          max-rows="6"></b-form-textarea>
+          <label for="observacoes">Observações:</label>
+          <b-form-textarea id="textarea" v-model="text" placeholder="Tem alguma observação..." rows="3"
+            max-rows="6"></b-form-textarea>
 
-        <b-button class="btn-custom" type="submit" v-b-popover.hover="'A ajuda já está a caminho'">ENVIAR
-          PEDIDO</b-button>
+          <b-button class="btn-custom" type="submit" v-b-popover.hover="'A ajuda já está a caminho'">ENVIAR
+            PEDIDO</b-button>
 
-      </form>
+        </form>
+      </div>
+    </div>
+
+    <div class="carousel-pizza">
+      <b-carousel id="carousel" img-width="1024" img-height="480" :interval="10000">
+        <b-carousel-slide :img-src="require('@/img/anuncio1.png')"></b-carousel-slide>
+        <b-carousel-slide :img-src="require('@/img/anuncio2.png')"></b-carousel-slide>
+        <b-carousel-slide :img-src="require('@/img/anuncio3.png')"></b-carousel-slide>
+      </b-carousel>
     </div>
 
   </div>
@@ -64,6 +74,7 @@ export default {
 </script>
   
 <style scoped>
+
 .order-section {
   text-align: center;
   padding: 50px 0;
