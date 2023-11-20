@@ -1,50 +1,64 @@
 <template>
+  <div>
 
-      <div>
-  
-        <b-navbar class="navbar-custom">
-          <b-container>
+    <b-navbar class="navbar-custom">
+      <b-container>
 
-            <b-navbar-brand href="#">
-              <img src="@/img/logo1.png" alt="Logotipo da Pizzaria" class="logo">
-            </b-navbar-brand>
-  
+        <b-navbar-brand class="navbar-brand" href="#">
+          PP
+        </b-navbar-brand>
 
-            <b-navbar-nav class="ml-auto">
-              <b-nav-item>
-                <b-button variant="light" href="#menu">CARDÁPIO</b-button>
-              </b-nav-item>
-              
-              <b-nav-item>
-                <b-button variant="light" href="#about">PROMOÇÕES</b-button>
-              </b-nav-item>
-             
-              <b-nav-item>
-                <b-button variant="light" href="#contact">CONTATO</b-button>
-              </b-nav-item>
-            </b-navbar-nav>
-          </b-container>
-        </b-navbar>
+
+        <b-navbar-nav class="ml-auto">
+          <b-nav-item class="navbar-item">
+            CARDÁPIO
+          </b-nav-item>
+
+          <b-nav-item class="navbar-item">
+            PROMOÇÕES
+          </b-nav-item>
+
+          <b-nav-item class="navbar-item">
+            NOSSA HISTÓRIA
+          </b-nav-item>
+
+          <b-nav-item class="navbar-item">
+            FALE CONOSCO
+          </b-nav-item>
+
+        </b-navbar-nav>
+      </b-container>
+    </b-navbar>
+
+  </div>
+</template>
   
-      </div>
+<script>
+
+export default {
+  name: 'NavBar',
+}
+
+</script>
   
-  </template>
-  
-  <script>
-  export default {
-    name: 'NavBar',
-  }
-  </script>
-  
-  <style scoped>
-  
-  .navbar-custom {
-    background-color: #1d4e28
-  }
-  
-  .logo {
-    max-height: 40px;
-  }
-  
-  </style>
+<style scoped>
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@500&display=swap');
+
+.navbar-custom {
+  background-color: #1d4e28
+}
+
+.navbar-brand {
+  font-family: 'Agbalumo', sans-serif;
+  color: #ff0000df;
+  font-size: 25px;
+  text-shadow:
+    1px 1px 0 #000;
+}
+
+.navbar-item {
+  font-weight: bold;
+}
+</style>
   

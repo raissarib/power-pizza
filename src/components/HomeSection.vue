@@ -3,23 +3,24 @@
 
     <div class="home">
       <h1 class="title">Power Pizza</h1>
-      <p class="sub-title">descubra nosso sabores deliciosos</p>
-      <b-button variant="success">Fazer Pedido</b-button>
+      <p class="sub-title">Descubra nossos sabores deliciosos...</p>
+      <b-button class="btn-custom">FAZER PEDIDO</b-button>
     </div>
-
 
   </div>
 </template>
   
 <script>
+
 export default {
   name: 'HomeSection',
 }
+
 </script>
   
 <style scoped>
+
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
 .home {
   background-image: url('@/img/img1.png');
@@ -39,9 +40,20 @@ export default {
 }
 
 .sub-title {
-  font-family: 'Roboto Condensed', sans-serif;
   color: #ffffff;
   font-size: 20px;
 }
+
+.btn-custom {
+  color: #fff;
+  background-color: #1d4e28;
+  border-color: #1d4e28;
+}
+
+.btn-custom:hover {
+  background-color: #ff0000df;
+  border-color: #ff0000df;
+}
+
 </style>
   
