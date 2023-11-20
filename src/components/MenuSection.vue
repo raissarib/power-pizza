@@ -42,7 +42,7 @@
                     <b-card-text>
                       Queijo, tomate, oregano e manjericão.
                     </b-card-text>
-                    <b-button class="btn-custom" v-b-popover.hover="'Estou sendo isolada pelo agressor'">R$ 28,90
+                    <b-button class="btn-custom" v-b-popover.hover="'Eu estou sendo isolada pelo agressor'">R$ 28,90
                     </b-button>
                   </b-card-body>
                 </b-col>
@@ -61,7 +61,7 @@
                     <b-card-text>
                       Peperoni, azeitona, cebola e pimentão
                     </b-card-text>
-                    <b-button class="btn-custom" v-b-popover.hover="'Sofri abuso sexual'">R$40,90 </b-button>
+                    <b-button class="btn-custom" v-b-popover.hover="'Eu sofri abuso sexual'">R$40,90 </b-button>
                   </b-card-body>
                 </b-col>
               </b-row>
@@ -79,7 +79,7 @@
                     <b-card-text>
                       Queijo, requeijão, oregano e parmesão ralado.
                     </b-card-text>
-                    <b-button class="btn-custom" v-b-popover.hover="'Sofri abuso físico'">R$ 35,90 </b-button>
+                    <b-button class="btn-custom" v-b-popover.hover="'Eu sofri abuso físico'">R$ 35,90 </b-button>
                   </b-card-body>
                 </b-col>
               </b-row>
@@ -97,7 +97,7 @@
                     <b-card-text>
                       Chocolate ao leite.
                     </b-card-text>
-                    <b-button class="btn-custom" v-b-popover.hover="'Sofri violência psicológica'">R$ 32,90</b-button>
+                    <b-button class="btn-custom" v-b-popover.hover="'Eu sofri violência psicológica'">R$ 32,90</b-button>
                   </b-card-body>
                 </b-col>
               </b-row>
@@ -115,7 +115,7 @@
                     <b-card-text>
                       Banana e canela.
                     </b-card-text>
-                    <b-button class="btn-custom" v-b-popover.hover="'Estou sendo perseguida/stalkeada'">R$
+                    <b-button class="btn-custom" v-b-popover.hover="'Eu estou sendo perseguida/stalkeada'">R$
                       29,90</b-button>
                   </b-card-body>
                 </b-col>
