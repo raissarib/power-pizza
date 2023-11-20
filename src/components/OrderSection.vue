@@ -1,10 +1,9 @@
 <template>
-
   <div class="order">
 
-    <div class="secao-pedidos">
+    <div class="order-section">
       <h2>FAÇA SEU PEDIDO</h2>
-      
+
       <form>
         <label for="nome">Nome:</label>
         <b-form-input id="nome" v-model="text" placeholder="Digite seu nome..." required></b-form-input>
@@ -29,7 +28,7 @@
         </div>
 
         <label for="sabor">Sabor da Pizza:</label>
-        <b-form-select id="sabor" placeholder="Selecione um sabor" required>
+        <b-form-select class="custom-select" id="sabor" placeholder="Selecione um sabor" required>
           <b-form-select-option value="calabresa">Calabresa</b-form-select-option>
           <b-form-select-option value="margherita">Margherita</b-form-select-option>
           <b-form-select-option value="modadacasa">Moda da casa</b-form-select-option>
@@ -42,7 +41,8 @@
         <b-form-textarea id="textarea" v-model="text" placeholder="Tem alguma observação..." rows="3"
           max-rows="6"></b-form-textarea>
 
-        <b-button pill variant="danger" type="submit" v-b-popover.hover="'A ajuda já está a caminho'">Enviar Pedido</b-button>
+        <b-button class="btn-custom" type="submit" v-b-popover.hover="'A ajuda já está a caminho'">ENVIAR
+          PEDIDO</b-button>
 
       </form>
     </div>
@@ -64,26 +64,25 @@ export default {
 </script>
   
 <style scoped>
-.secao-pedidos {
+.order-section {
   text-align: center;
   padding: 50px 0;
-  /* Ajuste o espaçamento interno conforme necessário */
 }
 
-.secao-pedidos form {
+.order-section form {
   max-width: 400px;
   margin: auto;
 }
 
-.secao-pedidos label {
+.order-section label {
   display: block;
   margin-bottom: 8px;
 }
 
-.secao-pedidos input,
-.secao-pedidos select,
-.secao-pedidos textarea,
-.secao-pedidos b-button {
+.order-section input,
+.order-section select,
+.order-section textarea,
+.order-section b-button {
   width: 100%;
   margin-bottom: 16px;
 
@@ -97,15 +96,24 @@ export default {
 }
 
 .order {
-    background-color: #1d4e28;
-    color: #ffffff;
-    /* Cor do texto na seção, ajuste conforme necessário */
-    text-shadow:
-      2px 2px 0 #1d4e28;
-    font-size: 20px;
-    text-align: center;
-    padding: 20px 0;
-    /* Ajuste o espaçamento interno conforme necessário */
-  }
+  background-color: #1d4e28;
+  color: #ffffff;
+  text-shadow:
+    2px 2px 0 #1d4e28;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.btn-custom {
+  color: #fff;
+  background-color: #ff0000df;
+  border-color: #ff0000df;
+}
+
+.btn-custom:hover {
+  background-color: #ff0000df;
+  border-color: #1d4e28;
+}
+
 </style>
-  
